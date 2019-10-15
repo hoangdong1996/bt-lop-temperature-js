@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lớp temperature</title>
+</head>
+<body>
+<script>
+    function Temperature(celsius) {
+        this.celsius = celsius;
+
+        this.getCelsius = celsius;
+
+        this.setCelsius = function (celsius) {
+            this.celsius = celsius;
+        };
+        this.celciusToFehrenheit = function () {
+            console.log(this.celsius*9/5+32);
+        };
+
+        this.celciusToKenvin = function () {
+            console.log(this.celsius + 273.15);
+        }
+    }
+
+</script>
+</body>
+</html>
